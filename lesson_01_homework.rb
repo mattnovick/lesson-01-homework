@@ -34,10 +34,11 @@ end
 # Fix Broken Code
 
 def full_name(firstname, lastname)
-  puts firstname + " " + lastname
+  firstname + " " + lastname
 end
 
 puts full_name("Bubba", "Chuck")
+puts "Good morning #{full_name("Bubba", "Chuck")} how are you?"
 
 
 
@@ -50,10 +51,8 @@ puts full_name("Bubba", "Chuck")
 
 ## Enter your code for your 'add' method below
 
-def add(first_var, second_var)
-  result = first_var + second_var
-
-  return result
+def add(first_num, second_num)
+  first_num + second_num
 end
 
 puts add(8,9)
@@ -64,7 +63,7 @@ puts add(8,9)
 ## Enter the code for you 'join_strings' method below
 
 def join_strings(name, adjective)
-  puts name + " is " + adjective
+  name + " is " + adjective
 end
 
 puts join_strings("Paula", "lame")
@@ -73,12 +72,12 @@ puts join_strings("Paula", "lame")
 
 ## Enter your 'old_enough_to_vote?' method below
 
-def old_enough_to_vote (age)
-  if age >= 18
+def old_enough_to_vote (birthyear)
+  if birthyear <= 1998
     "Yes"
   else
     "No"
   end
 end
 
-puts old_enough_to_vote(19)
+puts old_enough_to_vote(1991)
